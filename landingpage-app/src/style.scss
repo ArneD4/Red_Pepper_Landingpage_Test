@@ -1,0 +1,49 @@
+// Overwrite default Bootstrap variables
+$primary: #52b47b;
+$secondary: #f4f4f4;
+$dark: #445764;
+
+// Import Bootstrap after variable overrides
+@import "~bootstrap/scss/bootstrap";
+
+
+
+p {
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    color: $dark;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: $dark;
+}
+
+header {
+    // background-image: url("/landingpage-app/images/BENE_Background_image.png");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    background-color: #445764;
+}
+
+section .container {
+    max-width: 1140px;
+}
+
+.btn {
+    border-radius: 0;
+    width: 180px;
+    height: 45px;
+}
+
+
+.green {
+  color: $primary;
+}
+.white {
+  color: $light;
+}
