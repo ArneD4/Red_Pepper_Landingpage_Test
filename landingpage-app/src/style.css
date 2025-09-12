@@ -12008,6 +12008,10 @@ header {
   max-width: 1140px;
 }
 
+.fs-7 {
+  font-size: 1.1rem !important;
+}
+
 .btn {
   border-radius: 0;
 }

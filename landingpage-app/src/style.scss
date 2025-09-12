@@ -3,6 +3,8 @@ $primary: #52b47b;
 $secondary: #f4f4f4;
 $dark: #445764;
 
+
+
 // Import Bootstrap after variable overrides
 @import "~bootstrap/scss/bootstrap";
 
@@ -32,6 +34,10 @@ header {
 
 .row {
     max-width: 1140px;
+}
+
+.fs-7 {
+    font-size: 1.1rem!important;
 }
 
 
