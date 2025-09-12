@@ -12006,6 +12006,7 @@ header {
 
 .row {
   max-width: 1140px;
+  margin: auto;
 }
 
 .fs-7 {
