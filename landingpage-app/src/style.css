@@ -12004,6 +12004,19 @@ header {
   background-color: #445764;
 }
 
+input {
+  background: transparent !important;
+  border: 0px !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #fff !important;
+}
+input::-moz-placeholder {
+  color: #fff !important;
+}
+input::placeholder {
+  color: #fff !important;
+}
+
 .row {
   max-width: 1140px;
   margin: auto;
