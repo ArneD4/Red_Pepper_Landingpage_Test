@@ -11994,22 +11994,22 @@ h4,
 h5,
 .h5 {
   font-family: Helvetica, Arial, sans-serif;
-  font-weight: 700;
   color: #445764;
 }
 
 header {
+  background-image: url("../images/BENE_Background_image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #445764;
 }
 
-section .container {
+.row {
   max-width: 1140px;
 }
 
 .btn {
   border-radius: 0;
-  width: 180px;
-  height: 45px;
 }
 
 .green {
