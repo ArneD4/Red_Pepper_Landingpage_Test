@@ -8,6 +8,7 @@ $dark: #445764;
 // Import Bootstrap after variable overrides
 @import "~bootstrap/scss/bootstrap";
 
+* {box-sizing: border-box;}
 
 
 p {
@@ -39,12 +40,13 @@ input {
     border-bottom: 1px solid $white!important;
     &::placeholder {
         color: $white!important;
+        font-size: 12px;
     }
 }
 
 
 
-.row {
+section .container .row {
     max-width: 1140px;
     margin: auto;
 }
@@ -69,3 +71,41 @@ input {
   color: $light;
 }
 
+
+
+// image slider styling
+
+.img-comp-container {
+  position: relative;
+  height: 300px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  // vertical-align: middle;
+}
+
+.img-comp-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: $primary;
+  border-radius: 50%;
+}
+
+.img-comp-overlay {
+  border-right: 1px solid $white;
+}

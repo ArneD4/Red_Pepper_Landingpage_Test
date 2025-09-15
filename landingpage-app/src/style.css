@@ -11979,6 +11979,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  box-sizing: border-box;
+}
+
 p {
   font-family: "Inter", Helvetica, Arial, sans-serif;
   color: #445764;
@@ -12012,12 +12016,14 @@ input {
 }
 input::-moz-placeholder {
   color: #fff !important;
+  font-size: 12px;
 }
 input::placeholder {
   color: #fff !important;
+  font-size: 12px;
 }
 
-.row {
+section .container .row {
   max-width: 1140px;
   margin: auto;
 }
@@ -12036,4 +12042,38 @@ input::placeholder {
 
 .white {
   color: #f8f9fa;
+}
+
+.img-comp-container {
+  position: relative;
+  height: 300px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+}
+
+.img-comp-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #52b47b;
+  border-radius: 50%;
+}
+
+.img-comp-overlay {
+  border-right: 1px solid #fff;
 }/*# sourceMappingURL=style.css.map */
