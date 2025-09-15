@@ -109,3 +109,8 @@ section .container .row {
 .img-comp-overlay {
   border-right: 1px solid $white;
 }
+
+
+.border-white-subtle {
+  border: 1px solid rgba(255, 255, 255, 0.5)!important;
+}
